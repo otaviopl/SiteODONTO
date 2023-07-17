@@ -6,19 +6,19 @@ const Sobre = () => {
   const professionals = [
     {
       name: 'Dr. Gustavo Pereira Lopes',
-      photo: '/../../gu.jpeg',
+      photo: '/../../drGu.jpeg',
       description: 'O Dr. Gustavo é especializado em implantes dentários e possui ampla experiência na área. Ele é conhecido por seu cuidado e atenção aos pacientes, sempre buscando o melhor resultado estético e funcional.'
     },
     {
       name: 'Dr. Murilo César Júnior',
-      photo: '../../murilo.jpeg',
+      photo: '../../drMu.jpeg',
       description: 'O Dr. Murilo é especialista em odontologia estética e lentes de contato dentais. Ele é reconhecido por sua habilidade em transformar sorrisos, proporcionando resultados naturais e harmoniosos.'
     }
   ];
 
   return (
-    <div className="container">
-      <h2>Conheça Nossos Profissionais</h2>
+    <div className="pro-container">
+      <h2 className='text-pro'>Conheça Nossos Profissionais</h2>
       <div className="professionals-container">
         {professionals.map((professional, index) => (
           <div className="card" key={index}>

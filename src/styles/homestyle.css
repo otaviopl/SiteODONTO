@@ -2,23 +2,61 @@ html, body {
     height: 100%;
     margin: 0;
   }
-  
+  p,h1,h2{
+    color: white;
+  }
+ 
+#home{
+  background-image: url("../../public/fundoMu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+
+}
+  .titulo{
+    
+    font-size: 150%;
+    margin-bottom: 1.55%;
+    margin-right: 70%;
+  }
+  .welcome{
+    font-size: 195%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-top: 2%;
+    color: gray;
+  }
+  .text-come{
+    font-size:150% ;
+    color: #1a1919;
+    
+    margin-bottom: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+  }
   .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a1919, #555151);
+    
+    
   }
   .navbar{
+    
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.55%;
+    margin-left:78% ;
+    margin-top: -3.1%;
   }
   
   header {
-    background-color: #363434;
+    background-color: rgb(19, 18, 18);
     color: #fff;
     padding: 10px;
     text-align: center;
+    
   }
   
   nav ul {
@@ -56,4 +94,64 @@ html, body {
     text-align: center;
     border-top: 1px solid #ccc;
   }
+  .agendar-button {
+    position: relative;
+    background-color: #3b3e41;
+    color: #ffffff;
+    padding: 16px 32px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 6%;
+  }
+  
+  .agendar-button .button-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .agendar-button:hover .button-hover {
+    opacity: 1;
+  }
+  
+  .agendar-button .button-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(-30deg);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+  }
+  
+  .agendar-button:hover .button-shine {
+    opacity: 1;
+  }
+  .nav-button {
+    background-color:#1a1919;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    color: #adb2b9;
+  }
+  
   
